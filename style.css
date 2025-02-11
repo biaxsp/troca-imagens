@@ -1,0 +1,58 @@
+:root {
+    --imagem-fundo: url(./img\ 1.webp);
+    --imagem-fundo: url(./img\ 2.jpg);
+    --imagem-fundo: url(./img\ 3.jpg);
+    --imagem-fundo: url(./img\ 4.webp);
+    --imagem-fundo: url(./img\ 5.jpg);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: var(--imagem-fundo);
+    background-size: cover;
+    background-repeat: no-repeat;
+    transition: background-image 1s ease-in-out;
+}
+
+.container {
+    text-align: center;
+}
+
+#img {
+    padding: 10px;
+    font-size: 14px;
+    border-radius: 5px;
+    border: 2px solid #333;
+    margin-right: 2px;
+    width: 200px;
+    transition: 0.2s;
+}
+
+#img:focus {
+    outline: none;
+    border-color: #007bff;
+}
+
+#trocar-img {
+    padding: 10px 15px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    transition: 0.3s;
+}
+
+#trocar-img:hover {
+    background-color: #0056b3;
+}
